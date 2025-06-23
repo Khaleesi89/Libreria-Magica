@@ -1,0 +1,25 @@
+#contenedor-carrito-contador{
+  display: flex;
+  align-items: center;
+  margin-left:10%;
+
+
+}
+
+#carrito{
+    width: 30px;
+    height: 30px;
+    margin:10px;
+}
+
+#contador{
+    font-size: 23px;
+    color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  #contador:hover {
+    font-size: 26px;
+     transition: all 0.3s ease; /* Transición suave */
+     color: #60A5FA;
+}

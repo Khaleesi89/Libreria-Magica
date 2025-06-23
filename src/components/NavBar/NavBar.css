@@ -1,0 +1,92 @@
+.navBar-menu{
+    text-decoration:none;
+    width: 100%;
+    /*background: linear-gradient(to right, #0F172A, #1E3A8A);*/
+    /*background: linear-gradient(to right, #0F172A, #E9E5D6);*/
+    background: linear-gradient(to right, #0F172A, #AFC1D6);
+
+    display: flex;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.logoYnombre{
+    display: flex;
+    align-items: center;
+    color:white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#logoLibro{
+    width: 80px;
+}
+
+#titulo{
+    font-size: 20px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:400,600");
+body {
+  margin: 0;
+  background: white;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 800;
+}
+
+
+.navBar-menu::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+    margin-left: 2.5rem;
+    float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color:white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #60A5FA;
+  font-size: 16px;
+  transition: all 0.3s ease; /* Transición suave */
+}
+
+nav a::before {
+  content: "";
+  display: block;
+  height: 5px;
+  background-color: #F8FAFC;
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
