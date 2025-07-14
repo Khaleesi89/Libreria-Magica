@@ -12,7 +12,7 @@ function App() {
         <NavBar/>
       </div>
       <div className='contenido'>
-          <ItemListContainer titulo={ "No se pierda éstas promociones disponibles por el día del padre" }/>
+          <ItemListContainer/>
       </div>
     </>
   )

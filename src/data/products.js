@@ -1,0 +1,305 @@
+const products = [
+  // NOVELAS
+  {
+    "id": 1,
+    "name": "Cien años de soledad",
+    "category": "novelas",
+    "stock": 10,
+    "image": "/img/cienanios.webp",
+    "price": 45000,
+    "description": "La saga de la familia Buendía en Macondo, un clásico del realismo mágico de Gabriel García Márquez."
+  },
+  {
+    "id": 2,
+    "name": "Rayuela",
+    "category": "novelas",
+    "stock": 10,
+    "image": "/img/ray.webp",
+    "price": 40000,
+    "description": "Novela experimental de Julio Cortázar que permite múltiples caminos de lectura."
+  },
+  {
+    "id": 3,
+    "name": "Los detectives salvajes",
+    "category": "novelas",
+    "stock": 10,
+    "image": "/img/detect.jpeg",
+    "price": 42000,
+    "description": "Roberto Bolaño narra la búsqueda de Cesárea Tinajero entre México y Europa."
+  },
+  {
+    "id": 4,
+    "name": "La sombra del viento",
+    "category": "novelas",
+    "stock": 10,
+    "image": "/img/sombraviento.webp",
+    "price": 39000,
+    "description": "Un joven descubre un libro maldito en la Barcelona de posguerra."
+  },
+  {
+    "id": 5,
+    "name": "El túnel",
+    "category": "novelas",
+    "stock": 10,
+    "image": "/img/tunel.webp",
+    "price": 37000,
+    "description": "Ernesto Sabato cuenta la obsesión de un pintor con una mujer."
+  },
+  {
+    "id": 6,
+    "name": "La tregua",
+    "category": "novelas",
+    "stock": 10,
+    "image": "/img/tregua.jpg",
+    "price": 36000,
+    "description": "Diario íntimo de un oficinista viudo que redescubre el amor."
+  },
+    // DERECHO
+
+  {
+    "id": 7,
+    "name": "Introducción al Derecho",
+    "category": "derecho",
+    "stock": 10,
+    "image": "/img/introderecho.webp",
+    "price": 42000,
+    "description": "Norberto Bobbio ofrece una visión general de los fundamentos del derecho."
+  },
+  {
+    "id": 8,
+    "name": "El espíritu de las leyes",
+    "category": "derecho",
+    "stock": 10,
+    "image": "/img/espirituleyes.webp",
+    "price": 48000,
+    "description": "Montesquieu analiza cómo se relacionan las leyes con la sociedad y la cultura."
+  },
+  {
+    "id": 9,
+    "name": "Tratado de Derecho Civil",
+    "category": "derecho",
+    "stock": 10,
+    "image": "/img/derechocivil.jpeg",
+    "price": 55000,
+    "description": "Obra clásica del derecho civil argentino, de Jorge Mosset Iturraspe."
+  },
+  {
+    "id": 10,
+    "name": "Teoría pura del derecho",
+    "category": "derecho",
+    "stock": 10,
+    "image": "/img/puraderecho.jpg",
+    "price": 46000,
+    "description": "Hans Kelsen propone una concepción del derecho separada de moral y política."
+  },
+  {
+    "id": 11,
+    "name": "Constitución de la Nación Argentina",
+    "category": "derecho",
+    "stock": 10,
+    "image": "/img/constargen.jpg",
+    "price": 25000,
+    "description": "Norma fundamental del orden jurídico argentino."
+  },
+  {
+    "id": 12,
+    "name": "Derecho Penal Parte General",
+    "category": "derecho",
+    "stock": 10,
+    "image": "/img/derechopenal.jpeg",
+    "price": 53000,
+    "description": "Eugenio Zaffaroni presenta un estudio sistemático del derecho penal."
+  },
+  //CLASICOS
+  {
+    "id": 13,
+    "name": "Don Quijote de la Mancha",
+    "category": "clasicos",
+    "stock": 10,
+    "image": "/img/quijote.jpg",
+    "price": 45000,
+    "description": "Cervantes retrata las aventuras del ingenioso hidalgo y su fiel escudero."
+  },
+  {
+    "id": 14,
+    "name": "La Odisea",
+    "category": "clasicos",
+    "stock": 10,
+    "image": "/img/odisea.jpg",
+    "price": 40000,
+    "description": "El regreso de Odiseo tras la guerra de Troya, con dioses y aventuras."
+  },
+  {
+    "id": 15,
+    "name": "Crimen y castigo",
+    "category": "clasicos",
+    "stock": 10,
+    "image": "/img/crimen.webp",
+    "price": 47000,
+    "description": "Dostoyevski explora la culpa y la redención a través de un asesinato moral."
+  },
+  {
+    "id": 16,
+    "name": "Orgullo y prejuicio",
+    "category": "clasicos",
+    "stock": 10,
+    "image": "/img/orgullo.webp",
+    "price": 39000,
+    "description": "Jane Austen critica las convenciones sociales a través de una historia de amor."
+  },
+  {
+    "id": 17,
+    "name": "1984",
+    "category": "clasicos",
+    "stock": 10,
+    "image": "/img/1984.webp",
+    "price": 41000,
+    "description": "Orwell imagina una sociedad totalitaria vigilada por el Gran Hermano."
+  },
+  {
+    "id": 18,
+    "name": "Fausto",
+    "category": "clasicos",
+    "stock": 10,
+    "image": "/img/fausto.jpeg",
+    "price": 44000,
+    "description": "Goethe narra la historia de un hombre que vende su alma al diablo."
+  },
+  //AUTOAYUDA
+  {
+    "id": 19,
+    "name": "Los 7 hábitos de la gente altamente efectiva",
+    "category": "autoayuda",
+    "stock": 10,
+    "image": "/img/habitos.webp",
+    "price": 38000,
+    "description": "Stephen Covey ofrece un enfoque práctico para desarrollar efectividad personal."
+  },
+  {
+    "id": 20,
+    "name": "Cómo ganar amigos e influir sobre las personas",
+    "category": "autoayuda",
+    "stock": 10,
+    "image": "/img/amigos.webp",
+    "price": 35000,
+    "description": "Dale Carnegie ofrece técnicas para mejorar las relaciones y la comunicación."
+  },
+  {
+    "id": 21,
+    "name": "El poder del ahora",
+    "category": "autoayuda",
+    "stock": 10,
+    "image": "/img/ahora.webp",
+    "price": 36000,
+    "description": "Eckhart Tolle invita a vivir plenamente en el presente para encontrar paz."
+  },
+  {
+    "id": 22,
+    "name": "Piense y hágase rico",
+    "category": "autoayuda",
+    "stock": 10,
+    "image": "/img/rico.jpg",
+    "price": 37000,
+    "description": "Napoleon Hill comparte principios probados para alcanzar éxito financiero."
+  },
+  {
+    "id": 23,
+    "name": "Ámate a ti mismo",
+    "category": "autoayuda",
+    "stock": 10,
+    "image": "/img/amate.jpg",
+    "price": 34000,
+    "description": "Walter Riso ofrece herramientas para mejorar la autoestima y el bienestar."
+  },
+  {
+    "id": 24,
+    "name": "Despierta tu héroe interior",
+    "category": "autoayuda",
+    "stock": 10,
+    "image": "/img/heroe.webp",
+    "price": 39000,
+    "description": "Víctor Hugo Manzanilla presenta un plan para descubrir tu propósito de vida."
+  },
+  //POESIA
+  {
+    "id": 25,
+    "name": "Veinte poemas de amor y una canción desesperada",
+    "category": "poesia",
+    "stock": 10,
+    "image": "/img/poemas.webp",
+    "price": 32000,
+    "description": "Pablo Neruda mezcla erotismo, amor y melancolía en esta obra icónica."
+  },
+  {
+    "id": 26,
+    "name": "Antología poética",
+    "category": "poesia",
+    "stock": 10,
+    "image": "/img/antologia.webp",
+    "price": 34000,
+    "description": "Selección de los mejores poemas de Jorge Luis Borges."
+  },
+  {
+    "id": 27,
+    "name": "El hacedor",
+    "category": "poesia",
+    "stock": 10,
+    "image": "/img/hacedor.jpg",
+    "price": 33000,
+    "description": "Jorge Luis Borges mezcla prosa poética y relatos breves sobre el tiempo y la memoria."
+  },
+  {
+    "id": 28,
+    "name": "Poeta en Nueva York",
+    "category": "poesia",
+    "stock": 10,
+    "image": "/img/nyc.jpg",
+    "price": 31000,
+    "description": "Federico García Lorca refleja su experiencia y angustia en la gran ciudad."
+  },
+  {
+    "id": 29,
+    "name": "Residencia en la tierra",
+    "category": "poesia",
+    "stock": 10,
+    "image": "/img/tierra.webp",
+    "price": 30000,
+    "description": "Pablo Neruda explora la soledad y el desarraigo en esta colección poética."
+  },
+  {
+    "id": 30,
+    "name": "Canto general",
+    "category": "poesia",
+    "stock": 10,
+    "image": "/img/canto.webp",
+    "price": 35000,
+    "description": "Pablo Neruda ofrece una epopeya poética sobre la historia y la identidad latinoamericana."
+  }
+]
+
+//trae todos los productos
+const getProducts = () => {
+    return new Promise((resolve, reject)=>{
+        //se resuelve = resolve
+        //se rechaza = reject
+        //para el diley
+        setTimeout(() => {
+            resolve(products)
+        }, 3000);
+    });
+};
+
+const getProductById = (productId) =>{
+  return new Promise((resolve, reject) =>{
+    setTimeout(() =>{
+      //filtrar lista productos por id
+      //filter retorna array de objetos y find un objeto
+      const product = products.find((product) =>product.id === productId);
+      resolve(product);
+    },3000);
+  })
+}
+
+
+//para poder usarla en otro lado
+export {getProducts, getProductById};

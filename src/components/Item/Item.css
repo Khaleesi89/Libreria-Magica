@@ -1,0 +1,108 @@
+
+.container-product {
+  background-color: #1E2A47;
+  border-radius: 12px; /* Bordes redondeados para la card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto hover */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 15px;
+}
+
+.container-product:hover {
+  transform: translateY(-5px); /* Efecto al pasar el mouse */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más grande al hover */
+}
+
+/* Imágenes dentro de la card */
+.container-product .images img {
+  width: 100%;
+  height: 200px; /* Ajusta el tamaño de la imagen */
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Estilos del texto dentro de la card */
+.container-product .product {
+  padding-top: 10px;
+  text-align: center; /* Centrado del texto */
+}
+
+/* Título del producto */
+#nombreProdu {
+  font-size: 18px;
+  font-weight: bold;
+  color: white; /* Color del texto */
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+/* Precio del producto */
+.container-product h4 {
+  font-size: 20px;
+  color: white; /* Azul para el precio */
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Descripción del producto */
+#reseniaProdu {
+  font-size: 14px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Botones dentro de la card */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.add, .like {
+  padding: 10px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add {
+  background-color: #0066cc; /* Azul principal */
+  color: white;
+}
+
+.add:hover {
+  background-color: #005bb5; /* Azul oscuro al hacer hover */
+}
+
+.like {
+  background-color: #3399ff; /* Azul más claro */
+  color: white;
+  width: 50px;
+}
+
+.like:hover {
+  background-color: #287bb5; /* Azul oscuro al hacer hover */
+}
+
+/* Contenedor de las filas de las cards */
+.item-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px; /* Espacio entre las cards */
+}
+
+/* Asegura que cada card ocupe un 30% del contenedor, tres por fila */
+.container-product {
+  flex: 1 1 30%;
+  box-sizing: border-box;
+}
+
+
+

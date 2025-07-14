@@ -15,10 +15,10 @@
 #contador{
     font-size: 23px;
     color:white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
   
-  #contador:hover {
+#contador:hover {
     font-size: 26px;
      transition: all 0.3s ease; /* Transición suave */
      color: #60A5FA;
