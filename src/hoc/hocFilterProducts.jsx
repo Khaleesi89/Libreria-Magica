@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
-import useProducts from '../hooks/useProducts'
+import useProducts from '../hooks/useProducts.js'
 
 const hocFilterProducts = (Component) => {
   return function () {
     //es lo que escribe el usuario
     const [query, setQuery] = useState("");
-    const [products, setProducts] = useProducts()
+    const {products, setProducts} = useProducts();// Desestructuramos el objeto devuelto por useProducts()
 
     const changeInput = (event) => {
         setQuery(event.target.value.toLowerCase());//cada vez que cambie, me dara el valor

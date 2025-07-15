@@ -1,0 +1,64 @@
+.product-card {
+  display: flex; /* Esto hace que los elementos hijos se alineen en fila */
+  align-items: center; /* Alinea verticalmente los elementos */
+  gap: 20px; /* Espacio entre la imagen y la info */
+  padding: 20px;
+  background-color: #f4f4f4; /* Fondo para que sea más visible */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  margin-top: 6%;
+}
+
+.product-image {
+  flex: 0 0 200px; /* La imagen ocupará 200px, puedes ajustar el tamaño */
+}
+
+.product-image img {
+  width: 100%; /* Asegura que la imagen ocupe todo el contenedor */
+  height: auto; /* Mantiene las proporciones de la imagen */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+.product-info {
+  flex: 1; /* El área de la información ocupa el resto del espacio disponible */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribuye el contenido verticalmente */
+}
+
+.product-info p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+  font-weight: normal; /* Solo para los párrafos dentro de .product-info */
+}
+
+.product-info p:first-child {
+  font-weight: bold;
+  font-size: 18px; /* Aumenta el tamaño para el nombre */
+}
+
+.product-info p:last-child {
+  color: #008CBA; /* Color diferente para el precio */
+  font-weight: bold;
+}
+
+.buttons button {
+    
+    padding: 8px 16px;
+    background-color: #007BFF; /* Color azul de los botones */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.buttons button:hover {
+  background-color: #0056b3; /* Azul oscuro en hover */
+}
+
+.buttons button:active {
+  transform: scale(0.98); /* Efecto de "clic" */
+}

@@ -290,11 +290,11 @@ const getProducts = () => {
 };
 
 const getProductById = (productId) =>{
-  return new Promise((resolve, reject) =>{
+  return new Promise((resolve, reject) =>{   //NO FUNCIONA AUN
     setTimeout(() =>{
       //filtrar lista productos por id
       //filter retorna array de objetos y find un objeto
-      const product = products.find((product) =>product.id === productId);
+      const product = products.find((product) =>product.id === Number(productId));
       resolve(product);
     },3000);
   })

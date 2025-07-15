@@ -1,26 +1,43 @@
 import './NavBar.css'
 import CartWidget from '../CartWidget/CartWidget'
 import logo from '../../assets/logo.png'
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
   return (
         <div className="navBar-menu">
             <div className="logoYnombre">
-                <img id="logoLibro" src={logo} alt="libros logo"></img>
+                <Link to="/">
+                    <img id="logoLibro" src={logo} alt="libros logo"></img>
+                </Link>
                 <h1 id="titulo" alt="Aura libreria">Librería Mágica</h1>
             </div>
             <nav>
                 <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Novelas</a></li>
-                <li><a href="#">Derecho</a></li>
-                <li><a href="#">Clásicos</a></li>
-                <li><a href="#">Autoayuda</a></li>
-                <li><a href="#">Poesía</a></li>
+                    <li>
+                        <Link to="/">Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/category/novelas">Novelas</Link>
+                    </li>
+                    <li>
+                        <Link to="/category/derecho">Derecho</Link>
+                    </li>
+                    <li>
+                        <Link to="/category/clasicos">Clásicos</Link>
+                    </li>
+                    <li>
+                        <Link to="/category/autoayuda">Autoayuda</Link>
+                    </li>
+                    <li>
+                        <Link to="/category/poesia">Poesía</Link>
+                    </li>
                 </ul>
             </nav>
             <CartWidget/>
         </div>
+
+        
   )
 }
 
