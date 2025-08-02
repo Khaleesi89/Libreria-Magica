@@ -16,4 +16,3 @@ const ItemListWithSearch = hocFilterProducts(ItemList);
 
 export { ItemList, ItemListWithSearch };
 
-//que significa cuando dice es un export nombrado???

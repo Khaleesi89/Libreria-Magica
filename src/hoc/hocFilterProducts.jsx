@@ -7,6 +7,8 @@ const hocFilterProducts = (Component) => {
     const [query, setQuery] = useState("");
     const {products, setProducts} = useProducts();// Desestructuramos el objeto devuelto por useProducts()
 
+
+    //cambios en el formulario
     const changeInput = (event) => {
         setQuery(event.target.value.toLowerCase());//cada vez que cambie, me dara el valor
         //guarda con minusculas

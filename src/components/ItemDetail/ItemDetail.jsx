@@ -1,8 +1,26 @@
+import ItemCount from '../ItemCount/ItemCount';
 import './ItemDetail.css';
+import { useContext } from 'react';
+import { CartContext } from '../../context/CartContext';
 
 //abreviatura rcc
 //product = {} se pone par que no de errores por si no manda nada
 const ItemDetail = ({product = {}}) => {
+
+  //variables
+  const {addProductInCart} = useContext(CartContext)
+
+
+  //agregar productos al carrito
+  const AddProduct = (quantity) =>{
+    const productCart = {...product, quantity}//es para agregar un campo mas
+    //añadir ese producto al carrito pero ya tenemos toda la info
+    addProductInCart(productCart)
+    
+
+  }
+
+
   return (
     <div className="product-card">
         <div className="product-image">
@@ -13,10 +31,7 @@ const ItemDetail = ({product = {}}) => {
             <p>{product.description}</p>
             <p className="price">${product.price}</p>
         </div>
-        <div className="buttons">
-            <button className="add">Agregar</button>
-            <button className="like"><span>♥</span></button>
-        </div>
+        <ItemCount stock={product.stock} addProduct={AddProduct}/>
     </div>
 
 

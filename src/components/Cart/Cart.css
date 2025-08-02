@@ -1,0 +1,45 @@
+#elementosCarrito{
+    display:flex;
+    justify-content:space-around;
+    align-content: center;
+
+}
+
+#elementosCarrito img{
+    width: 120px;
+}
+
+.thStyle{
+    border: 2px solid #ccc;
+    text-align:center ;
+    padding: 8px ;
+    background-color: "#f5f5f5"
+}
+
+.tdStyle{
+    border: 1px solid #ccc;
+     padding: 8px ;
+     text-align: center;
+}
+
+.precioTotal{
+    margin: 50px
+}
+
+.finalizarcompra{
+    background-color:#1E3A8A ;
+    padding: 10px;
+    margin: 50px;
+    border-radius: 6px;
+    color: white;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.delete{
+    background-color:#1E3A8A ;
+    padding: 10px;
+    border-radius: 6px;
+    color: white;
+    font-weight: 900;
+}

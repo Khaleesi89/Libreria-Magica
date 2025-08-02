@@ -5,10 +5,11 @@ import { useParams } from "react-router-dom";
 
 
 const ItemDetailContainer = () =>{
+
+    //variables
     const {productId} = useParams()
     const {product, loading} = useProduct(productId);
 
-    console.log(product)
     return (
         <div>
             {

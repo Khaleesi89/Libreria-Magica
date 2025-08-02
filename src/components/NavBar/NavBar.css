@@ -8,8 +8,6 @@ body {
 .navBar-menu{
     text-decoration:none;
     width: 100%;
-    /*background: linear-gradient(to right, #0F172A, #1E3A8A);*/
-    /*background: linear-gradient(to right, #0F172A, #E9E5D6);*/
     background: linear-gradient(to right, #0F172A, #AFC1D6);
 
     display: flex;
